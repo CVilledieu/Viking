@@ -9,7 +9,10 @@
 
 
 static inline void MainLoopStep_Update(Core_t* core){
+    CatchInputEvents();
+    AppHook_Events();
 
+    WCS_UpdateStep();
 }
 
 
@@ -19,11 +22,6 @@ static inline void MainLoopStep_Draw(Core_t* core){
 
 }
 
-
-
-static inline void MainLoopStep_ResolveInput(Core_t* core){
-
-}
 
 
 
@@ -37,8 +35,6 @@ int Core_Run(Core_t* core){
         
         MainLoopStep_Draw(&core);
 
-        //Not sure if handling input should happen at the start or end of the loop
-        MainLoopStep_ResolveInput(&core);
     }
 
     return 1;
