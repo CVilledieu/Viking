@@ -1,4 +1,4 @@
-#include "core/renderer/dispatcher.h"
+#include "core/renderer/dispatch/dispatcher.h"
 
 #include "glad/glad.h"
 

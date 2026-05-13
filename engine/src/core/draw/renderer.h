@@ -1,6 +1,6 @@
 #pragma once
 
-#include "internal_config.h"
+#include "internal/config.h"
 
 
 typedef struct MeshID_t MeshID_t;

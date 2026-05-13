@@ -8,6 +8,7 @@ typedef uint32_t WorldId_t;
 typedef struct WCS_t{
     ActiveWorlds_t active;
     WorldRegistry_t registered;
+    
 }WCS_t;
 
 
