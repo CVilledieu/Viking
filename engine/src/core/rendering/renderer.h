@@ -1,3 +1,16 @@
+/*
+General overview
+
+Controls and owns submitting data to the GPU.
+Acts as the middle man between the rest of the Engine and the GPU
+
+Goals
+
+- Never owns data. 
+
+*/
+
+
 #pragma once
 
 #include "internal/config.h"

@@ -2,6 +2,15 @@
 
 #include "internal/config.h"
 
+
+
+
+
+typedef struct Display_t{
+    GLFWwindow* window;
+}Display_t;
+
+
 typedef struct GLFWwindow Canvas_t;
 
 void Canvas_Init(Canvas_t* canvas);
